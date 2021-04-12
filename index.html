@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Hamish Murray's Portfolio
+        </title>
+        <link href="./style.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+    </head>
+    <body>
+        <main>
+        <header>
+        <nav class="topnav" id="portfolioTopnav">
+        <a href="#about">About</a> 
+        <a href="#skills">Skills</a> 
+        <a href="#accomplishments">Accomplishments</a> 
+        <a href="#contact">Contact</a> 
+        <a href="javascript:void(0);" class="icon" onclick="openMenu()"><i class="fa fa-bars"></i></a>
+        </nav>
+        <hr>
+        <h1>Hamish Murray</h1>
+        </header>
+        <!--About Section-->
+        <div id="aboutsection">
+            <figure>
+            <a href="https://research.qut.edu.au/qutcds/staff/hamish-murray/" target="_blank"><img src="hamish_photo.jpg" width="120" height="200" alt="Hamish Murray smiling to the camera"/></a>
+            </figure>
+            <h2 id="about" class="heading uppercase">About</h2>
+            <p class="about">I am a second-year PhD student at the <strong>Queensland University of Technology</strong>, 
+            in the School of Mathematics. My research focuses on <em>Player List Management 
+            Optimisation in the Australian Football League</em>. This combines operations 
+            research and statistics principles to discover optimal strategies around 
+            list management. At this stage, I have looked at how goal kicking accuracy 
+            differs between players using an ordinal regression model and I have developed 
+            a win probability model. I am now focusing on creating a basic optimisation model 
+            using an initial team construction as an input and looking at which players may be 
+            added to the team to improve the chance of winning. </p> 
+        <p>Outside my PhD, I enjoy watching the AFL and a number of other sports. </p>
+        <p>I have graduated with a Bachelor of Mathematics (Operations Research) (Honours) and a Bachelor of Business (Finance).</p>
+        <br>
+        <br>
+        <!--Skills Section-->
+        <h3 id="skills">Skills</h3>
+            <div class="columns">
+                <br>
+            <h4>Research Skills</h4>
+                <ul class="list">
+                    <li>Data analysis</li>
+                    <li>Statistical modelling and analysis</li>
+                    <li>Optimisation modelling</li>
+                    <li>Report writing</li>
+                    <li>Data visualisation</li>
+                    <br>
+                    <br>
+                    <br>
+                </ul>
+            <h4>Interpersonal Skills</h4>
+                <ul class="list">
+                    <li>Teamwork</li>
+                    <li>Mentoring and coaching</li>
+                    <li>Public speaking</li>
+                    <li>Active listening</li>
+                    <br>
+                    <br>
+                    <br>
+                </ul>
+                <br>
+            <h4>Technical Skills</h4>
+                <ul class="list">
+                    <li>Programming in R and Cplex </li>
+                    <li>Some programming experience in Matlab, C#, SQL and VBA</li>
+                    <li>Proficiency in Microsoft Office and LaTeX</li>
+                    <li>MacOS and Windows experience</li>
+                    <br>
+                </ul>
+            </div>
+        </div>
+        <!--Accomplishments Section-->
+        <div id="accomplishmentssection">
+        <h2 id="accomplishments">Accomplishments</h2>
+            <table>
+                <tr>
+                    <th>Publications</th>
+                    <th>Awards</th>
+                    <th>Presentations</th>
+                </tr>
+                <tr>
+                    <td>Currently working on my first publication.</td>
+                    <td>Research Training Program Scholarship </td>
+                    <td>I have not made any presentations.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Centre for Data Science Top-up Scholarship</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>QUT Vice Chancellor's Scholarship (Academic)</td>
+                    <td></td>
+                </tr>
+            </table>
+            <br>
+        <h3>Coding Examples</h3>
+            <a href="quiz.html" target="_blank">Take the Portfolio Quiz!.</a>
+        </div>
+
+        <!--Contact Section-->
+        <div id="contactsection">
+        <h2 id="contact" class="contactform">Contact</h2>
+        This is a link to my <a href="https://research.qut.edu.au/qutcds/staff/hamish-murray/" target="_blank">Centre for Data Science page.</a>
+        <br>
+        <br>
+        <form>
+            <label for="name">Name:*</label>
+            <br>
+            <input type="text" name="name" value="name" required>
+            <br>
+            <br>
+            <label for="email">Email:*</label>
+            <br>
+            <input type="text" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <br>
+            <br>
+            <label for="mobile">Mobile: (optional)</label>
+            <br>
+            <input type="text" name="mobile" id="mobile" pattern="[0-9]{7,10}">
+            <br>
+            <br>
+            <label for="message">Please leave your message below:*</label>
+            <br>
+            <textarea id="message" name="message" rows="5" cols="30" required>Message</textarea>
+            <br>
+            <br>
+            <input type="submit" value="Send">
+        </form>
+        </div>
+        </main>
+        <script src="./nav.js"></script>
+    </body>
+
+</html>
